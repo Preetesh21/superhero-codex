@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Superhero</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1 id="myDIV" style="color: #e4c439;">SUPERHERO CODEX</h1>
+    <div id="main">
+        <center>
+            <button id="button" type="button" class="button">Generate Superhero</button><br>
+            <label for="name" style="color: #e4c439;">Name:: </label>
+            <input type="text" id="name" name="name">
+            <button type="button" id='search' onclick='search()'>Click Me!</button><br><br>
+            <div id="delete-container">
+                <button id="delete-btn" onclick="removeDummy()" class="ui red button">Delete</button>
+            </div>
+        </center>
+        <div id="app"></div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
