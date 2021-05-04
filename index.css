@@ -30,6 +30,10 @@ main>h1 {
     text-transform: uppercase;
 }
 
+p {
+    color: #e4c439;
+}
+
 #app {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));

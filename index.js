@@ -10,7 +10,7 @@ button.addEventListener('click', sayhello);
 
 async function data(id) {
     const proxyurl = "https://cors-anywhere.herokuapp.com/";
-    const url = `https://superheroapi.com/api/1132798347100433/${id}`; // site that doesn’t send Access-Control-*
+    const url = `https://superheroapi.com/api/830451297820471/${id}`; // site that doesn’t send Access-Control-*
     const response = await fetch(proxyurl + url); // https://cors-anywhere.herokuapp.com/https://example.com
     const data = await response.json();
     //console.log(data.work);
@@ -73,13 +73,14 @@ function search() {
 
 
 async function showhero2(id) {
-    const url = 'https://superheroapi.com/api/1132798347100433/search/' + id;
-    console.log(url);
+    const url = 'https://superheroapi.com/api/830451297820471/search/' + id;
+    
     const proxyurl = "https://cors-anywhere.herokuapp.com/";
     //const url = `https://superheroapi.com/api/1132798347100433/search/${id}`; // site that doesn’t send Access-Control-*
     const response = await fetch(proxyurl + url); // https://cors-anywhere.herokuapp.com/https://example.com
+   
     const data = await response.json();
-    console.log(data);
+    
     //console.log(data.length);
     if (data.response !== 'error') {
         console.log(data.results.length);
